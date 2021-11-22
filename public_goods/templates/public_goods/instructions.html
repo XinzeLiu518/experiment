@@ -1,0 +1,24 @@
+{% load otree %}
+
+<div class="card bg-light m-3">
+    <div class="card-body">
+    <h3>
+        说明
+    </h3>
+
+    <p>
+        在本次任务中, 你将会被随机分配到一个具有{{ Constants.players_per_group }}个参与者的组中。
+        每位参与者拥有{{ Constants.endowment }}个实验币，并可以选择将自己的实验币投资到个人账户或公共账户中，
+        投资数额为整数（0到{{ Constants.endowment }}实验币）。
+    </p>
+    <p>
+        你的收益将会根据以下方式计算:
+    </p>
+    <p>
+         系统将加总{{ Constants.players_per_group }}个参与者在公共账户中的投资，
+        并乘以 {{ Constants.multiplier }}, 平均分给{{ Constants.players_per_group }}
+        个参与者做为每个人的公共账户收益。你的总收益为公共账户收益和私人账户收益之和。
+    </p>
+    </div>
+</div>
+
