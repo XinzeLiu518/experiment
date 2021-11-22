@@ -1,0 +1,90 @@
+
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block styles %}
+   <style>
+      input[type=radio] {
+        transform: scale(1.5);
+        margin: 12px -10px 0px -30px;
+      }
+   </style>
+{% endblock %}
+
+{% block content %}
+
+<h1>任务一</h1>
+
+<div class="container p-3 my-3 border" style="font-size:18pt">
+  <h2> 说明 </h2>
+
+      <p>请在以下给出的两种彩票之间做出选择，你一共需要完成十个“二选一”问题。</p>
+
+      <p>例如：</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col" colspan="2" style="text-align:center">A</th>
+            <th scope="col" ></th>
+            <th scope="col" colspan="2"  style="text-align:center">B</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td> 10% of €400 </td>
+            <td> 90% of €320 </td>
+            <td style="font-weight: bold">{{ form.HL }}</td>
+            <td> 10% of €770 </td>
+            <td> 90% of €20 </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+
+<p>在这个例子中，你有两个备选项：如果你选择彩票A，将有10%的概率获得400个实验币，另有90%的概率获得320个实验币；如果你选择彩票B，将有10%的概率获得770个实验币，另有90%的概率获得20个实验币。你需要在两种彩票之间选出一个你认为更好的。</p>
+<!--<p>在你完成所有十个选择题之后，我们的系统会随机选出其中一个问题作为本节任务的支付依据。每一个问题被随机选中的概率都是相同的，所以请认真回答每一个问题。</p>-->
+</div>
+
+<!--<div class="container p-3 my-3 border" style="font-size:18pt">-->
+
+<!--&lt;!&ndash;<h2>第二部分</h2>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<p>在实验的第二个部分，你将需要填写一些个人信息。</p>&ndash;&gt;-->
+
+<!--</div>-->
+
+<div class="container" style="font-size:18pt">
+  <div class="row">
+    &nbsp;
+  </div>
+  <div class="row" style="padding-left:135px;">
+    <div class="col-md-10">
+
+    </div>
+    <div class="col-md-2">
+      <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+         <span style="font-size:18pt">Continue</span>
+     </button>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

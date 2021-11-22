@@ -1,0 +1,151 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block styles %}
+   <style>
+      input[type=radio] {
+        transform: scale(1.5);
+        margin: 12px -10px 0px -30px;
+      }
+   </style>
+{% endblock %}
+
+{% block content %}
+
+
+<h1> 任务一 </h1>
+
+<div class="container p-3 my-3 border" style="font-size:16pt">
+  <p align = "justify"> 在下面的表格中一共有10行，请在每一行的A与B之间做出选择。 </p>
+  <p>当你做完全部选择后，请点击“继续”.</p>
+  <p align = "justify"> 在你做出选择之后，系统将会随机选择出一行，并根据该行中你做出的选择而对你进行支付。
+  </p>
+
+<table class="table">
+<thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col" colspan="2" style="text-align:center">A</th>
+    <th scope="col" ></th>
+    <th scope="col" colspan="2"  style="text-align:center">B</th>
+    <th scope="col"></th>
+  </tr>
+</thead>
+<tbody>
+<!-- Row 1 -->
+  <tr>
+    <th scope="row">1</th>
+    <td > 10% of €{{f1|safe}}  </td>
+    <td> 90% of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_1 }}</td>
+    <td>10% of €{{f3|safe}}</td>
+    <td >90% of €{{f4|safe}} </td>
+  </tr>
+<!-- Row 2 -->
+  <tr>
+    <th scope="row">2</th>
+    <td>20% of €{{f1|safe}} </td>
+    <td> 80% of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_2 }}</td>
+    <td>20% of €{{f3|safe}}</td>
+    <td>80% of €{{f4|safe}} </td>
+  </tr>
+<!-- Row 3 -->
+  <tr>
+    <th scope="row">3</th>
+    <td>30% of €{{f1|safe}} </td>
+    <td> 70% of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_3 }}</td>
+    <td>30% of €{{f3|safe}}</td>
+    <td>70% of €{{f4|safe}} </td>
+  </tr>
+<!-- Row 4 -->
+  <tr>
+    <th scope="row">4</th>
+    <td>40% of €{{f1|safe}} </td>
+    <td> 60% of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_4 }}</td>
+    <td>40% of €{{f3|safe}}</td>
+    <td>60% of €{{f4|safe}} </td>
+  </tr>
+<!-- Row 5 -->
+  <tr>
+    <th scope="row">5</th>
+    <td>50% of €{{f1|safe}} </td>
+    <td>50% of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_5 }}</td>
+    <td>50% of €{{f3|safe}}</td>
+    <td>50% of €{{f4|safe}} </td>
+  </tr>
+<!-- Row 6 -->
+  <tr>
+    <th scope="row">6</th>
+    <td>60% of €{{f1|safe}} </td>
+    <td> 40% of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_6 }}</td>
+    <td>60% of €{{f3|safe}}</td>
+    <td>40% of €{{f4|safe}} </td>
+  </tr>
+<!-- Row 7 -->
+  <tr>
+    <th scope="row">7</th>
+    <td>70% of €{{f1|safe}} </td>
+    <td> 30% of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_7 }}</td>
+    <td>70% of €{{f3|safe}}</td>
+    <td>30% of €{{f4|safe}} </td>
+  </tr>
+<!-- Row 8 -->
+  <tr>
+    <th scope="row">8</th>
+    <td>80% of €{{f1|safe}} </td>
+    <td> 20% of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_8 }}</td>
+    <td>80% of €{{f3|safe}}</td>
+    <td>20% of €{{f4|safe}} </td>
+  </tr>
+<!-- Row 9 -->
+  <tr>
+    <th scope="row">9</th>
+    <td>90% of €{{f1|safe}} </td>
+    <td> 10% of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_9 }}</td>
+    <td>90% of €{{f3|safe}}</td>
+    <td>10% of €{{f4|safe}} </td>
+  </tr>
+<!-- Row 10 -->
+  <tr>
+    <th scope="row">10</th>
+    <td>100% of €{{f1|safe}} </td>
+    <td> 0 of €{{f2|safe}}</td>
+    <td style="font-weight: bold">{{ form.HL_10 }}</td>
+    <td>100% of €{{f3|safe}}</td>
+    <td>0 of €{{f4|safe}} </td>
+  </tr>
+
+</tbody>
+</table>
+
+</div>
+
+
+        <div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:135px;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large">
+                  <span style="font-size:18pt">Continue</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+
+
+{% endblock %} -->
