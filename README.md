@@ -8,4 +8,4 @@
 # Sincerely,
 # Claire
 
-# Chris, I donot know how to do it if things like this, would you be so kind to give me some clues or details better? My email is 943576333@qq.com / xinzeliu98@163.com. Thank you in advance!!!
+# Chris, I donot know how to do it if things like this, would you be so kind to give me some clues or details better? My email is 943576333@qq.com / xinzeliu98@163.com/ xinzeliu98@outlook.com. Thank you in advance!!!
