@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    如果没有任何问题，请点击继续进入下一任务。
+{% endblock %}
+
+{% block content %}
+
+<!--    <p>-->
+<!--        如果没有任何问题，请点击继续进入下一任务。-->
+
+<!--    </p>-->
+
+    {% formfields %}
+
+    {% next_button %}
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    4、请阅读下列表格的相关真实就业数据信息：
+{% endblock %}
+
+{% block content %}
+
+    <p>
+
+        <img src="{% static 'master.png' %}"/>
+    </p>
+    <p>
+        《智联招聘：2020年秋季大学生就业报告》的最新研究表明：2020届硕士毕业生第一份工作的平均起薪为7290元/月，
+        且薪资与学历高低成正比。
+    </p>
+
+
+<!--    <img src="{% static 'undergraduate_master.png' %}"/>-->
+<!--    <img src="{% static 'master.png' %}"/>-->
+
+
+
+    {% next_button %}
+
+{% endblock %}
