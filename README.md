@@ -1,5 +1,5 @@
 # experiment
-#Dear Chris,  I am a beginner on otree. I want to design an app that participants answer questions like a survey in this project, the logic may like:
+# Dear Chris,  I am a beginner on otree. I want to design an app that participants answer questions like a survey in this project, the logic may like:
 #  Such as: Just give 1 minute for subjects to answer questions and we can calculate the ammount of questions they answer and the accuracy rate they have. And calculate their rank in a group or some people with same identity.
 #
 # The problem: 1. limited time 2. make sure the answer is right or wrong. 3. calculate the rank. I donot how the logic will be arranged using otree.
